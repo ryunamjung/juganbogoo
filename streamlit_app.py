@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import io
-import openpyxl
 
 st.title("Excel 파일 합치기 챗봇")
 
