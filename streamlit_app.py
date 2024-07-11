@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import io
 
-st.title("주간보고 합쳐주는 로봇")
+st.title("Excel 파일 합치기 챗봇")
 
 # Function to combine multiple Excel files
 def combine_excels(files):
@@ -23,7 +23,6 @@ if uploaded_files:
     # Combine the uploaded Excel files
     combined_df = combine_excels(uploaded_files)
     
-
     st.write("합쳐진 데이터:")
     st.dataframe(combined_df)
     
