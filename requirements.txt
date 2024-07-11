@@ -1,3 +1,2 @@
 streamlit
-numpy
 openpyxl==3.0.14
