@@ -64,15 +64,4 @@ if uploaded_files:
     if dashboard:
         st.plotly_chart(dashboard)
     
-    # Provide a download button for the combined Excel file
-    output = io.BytesIO()
-    with pd.ExcelWriter(output, engine='xlsxwriter') as writer:
-        combined_df.to_excel(writer, index=False, sheet_name='Sheet1')
-    processed_data = output.getvalue()
-    
-    st.download_button(
-        label="합쳐진 Excel 파일 다운로드",
-        data=processed_data,
-        file_name="combined.xlsx",
-        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-    )
+
