@@ -1,3 +1,3 @@
 streamlit
-openpyxl
-python.exe -m pip install --upgrade pip
+numpy
+openpyxl==3.0.14
